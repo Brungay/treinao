@@ -3,7 +3,8 @@ import re
 from flask import Flask, render_template, request
 import re
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
+
 
 # Lista para armazenar os exercícios
 exercicios = ["", "", "", "", "", "", ""]
